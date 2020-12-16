@@ -25,7 +25,7 @@ export default class ReferenceLink extends Plugin {
 	_createButton() {
 		const editor = this.editor;
 		const button = new ButtonView( this.locale );
-		const linkCommand = editor.commands.get( 'referencelink' );
+		const linkCommand = editor.commands.get( 'link' );
 
 		button.set( {
 			label: 'Reference link',
