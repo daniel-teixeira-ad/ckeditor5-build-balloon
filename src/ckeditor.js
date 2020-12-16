@@ -69,7 +69,6 @@ BalloonEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
-			'link',
 			'referencelink',
 			'bulletedList',
 			'numberedList',
