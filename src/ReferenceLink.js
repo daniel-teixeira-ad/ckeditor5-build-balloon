@@ -2,7 +2,7 @@ import ButtonView from '@ckeditor/ckeditor5-ui/src/button/buttonview';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 import LinkUI from '@ckeditor/ckeditor5-link/src/linkui';
 
-export class ReferenceLink extends Plugin {
+export default class ReferenceLink extends Plugin {
 	init() {
 		const editor = this.editor;
 		const linkUI = editor.plugins.get( LinkUI );
