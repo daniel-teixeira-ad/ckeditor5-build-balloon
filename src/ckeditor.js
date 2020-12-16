@@ -29,6 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import ReferenceLink from './ReferenceLink';
 
 export default class BalloonEditor extends BalloonEditorBase {}
 
@@ -56,7 +57,8 @@ BalloonEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	ReferenceLink
 ];
 
 // Editor configuration.
@@ -67,7 +69,7 @@ BalloonEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
-			'link',
+			'referencelink',
 			'bulletedList',
 			'numberedList',
 			'|',
